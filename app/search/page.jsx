@@ -1,6 +1,6 @@
 import SearchPage from "@/components/searchPage/SearchPage";
 import EmptyList from "@/components/uiElements/EmptyList";
-import { fetchData } from "@/utils/utils";
+
 
 async function fetchData(category, search) {
   try {
