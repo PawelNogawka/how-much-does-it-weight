@@ -46,19 +46,19 @@ const ProductDetails = ({
               data={product.nutrition}
               photoWeight={product.image.amount}
               user={user}
-              mode="nutrition"
+              mode="Nutrition"
             />
             <TableSection
               data={product.minerals}
               photoWeight={product.image.amount}
               user={user}
-              mode="minerals"
+              mode="Minerals"
             />
             <TableSection
               data={product.vitamins}
               photoWeight={product.image.amount}
               user={user}
-              mode="vitamins"
+              mode="Vitamins"
             />
           </div>
           <div className="product__right ">

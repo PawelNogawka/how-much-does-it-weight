@@ -48,12 +48,13 @@ const Rating = ({ comments = [], showAmount, userRating }) => {
     <div className="rating">
       <ul className="rating__list">{renderStars()}</ul>
       {showAmount && (
-        <span className="rating__rate">{`${rating.toFixed(
-          1
-        )} / ${amount} ratings`}</span>
+        <span className="rating__rate">
+          {`${rating.toFixed(1)} / ${amount} ${amount > 1 ? 'ratings' : 'rating'}`}
+        </span>
       )}
     </div>
   );
+  
 };
 
 export default Rating;
