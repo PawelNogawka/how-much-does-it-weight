@@ -4,7 +4,7 @@ import EmptyList from "@/components/uiElements/EmptyList";
 async function fetchData(category, search) {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/products/search/${category}/${search}`,
+      `https://how-much-does-it-weight.vercel.app/api/products/search/${category}/${search}`,
       {
         cache: "no-store",
       }

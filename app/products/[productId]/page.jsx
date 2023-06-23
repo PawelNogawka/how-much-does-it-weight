@@ -4,7 +4,7 @@ import { fetchApi } from "@/utils/utils";
 
 async function fetchData(id) {
   try {
-    const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+    const res = await fetch(`https://how-much-does-it-weight.vercel.app/api/products/${id}`, {
       cache: "no-store",
     });
 
