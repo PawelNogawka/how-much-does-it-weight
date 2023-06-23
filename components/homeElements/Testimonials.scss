@@ -1,0 +1,15 @@
+.testimonials {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 568px) {
+  .testimonials {
+    &__container {
+      gap: 3.5rem;
+    }
+  }
+}

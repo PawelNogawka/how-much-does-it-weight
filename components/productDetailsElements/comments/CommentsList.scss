@@ -1,0 +1,36 @@
+@import "../../../styles/variables";
+
+.comments-list {
+  &__heading {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+    color: $dark-text;
+    text-transform: capitalize;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__replies {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    align-self: flex-end;
+    width: 90%;
+    max-width: 90rem;
+  }
+}
+
+@media (min-width: 568px) {
+  .comments-list {
+    &__heading {
+      margin-bottom: 7rem;
+      font-size: 3rem;
+    }
+    &__replies {
+      gap: 2rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.users-likes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__list {
+    display: flex;
+
+    li {
+      margin-right: -2.4rem;
+
+      &:last-of-type {
+        opacity: 0.9;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__others {
+    margin-left: 2.4rem;
+    font-weight: 500;
+    color: $dark-text;
+    font-size: 1.5rem;
+  }
+}

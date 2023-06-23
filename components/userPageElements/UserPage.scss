@@ -1,0 +1,110 @@
+@import "../../styles/variables";
+
+.user-page {
+  &__header {
+    position: relative;
+    background-color: $main;
+    padding: 4rem 1.6rem;
+    background-color: $main;
+    background-image: url("../../public/mask.svg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  &__heading {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__desc {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem 4rem;
+    padding: 3rem 0;
+  }
+
+  &__avatar-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__avatar-name {
+    font-weight: 600;
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  &__avatar-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__avatar-tile {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #fff;
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .user-page {
+    &__header {
+      padding-bottom: 10rem;
+      margin-bottom: 37rem;
+    }
+    &__heading {
+      font-size: 4rem;
+    }
+
+    &__desc {
+      display: block;
+      margin-bottom: 2rem;
+      color: #fff;
+      text-align: center;
+    }
+    &__avatar-box {
+      position: absolute;
+      left: 50%;
+      bottom: -27rem;
+      transform: translateX(-50%);
+    }
+
+    &__avatar-name {
+      color: $main;
+      font-size: 4rem;
+    }
+
+    &__avatar-tile {
+      color: $dark-text;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../styles/variables";
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+
+  &__step-heading {
+    color: $dark-text;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+    span {
+      font-size: 1.6rem;
+      color: $light-text;
+      font-weight: 500;
+    }
+  }
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+  }
+
+  &__btns {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  &__error {
+    padding-top: 2rem;
+    text-align: center;
+    color: $error;
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+  }
+
+  &__footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 0.1rem solid $gray;
+  }
+
+  &__footer-link {
+    color: $dark-text;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &__change-link {
+    color: $dark-text;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__select {
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    width: 100%;
+    max-width: 17rem;
+  }
+
+  &__select-label {
+    margin-bottom: 0.3rem;
+    color: $light-text;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  &__select-form {
+    padding: 1.4rem 2rem;
+    border-radius: 0.4rem;
+    border: 0.2rem solid $gray;
+    background-color: #fbfbfb;
+    color: $dark-text;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    background-position: left 2.2rem center;
+  }
+}
+
+@media (min-width: 568px) {
+  .auth {
+    gap: 3rem;
+
+    &__step-heading {
+      margin: 2.3rem 0 1rem 0;
+    }
+
+    &__btns {
+      flex-direction: row;
+      margin: 1.5rem 0 2.5rem 0;
+      button {
+        flex: 1;
+      }
+    }
+    &__input-group {
+      flex-direction: row;
+      gap: 3rem;
+
+      input {
+        width: 100%;
+      }
+    }
+    &__logo {
+      margin-top: 0.2rem;
+      color: $main;
+      font-size: 1.7rem;
+    }
+    &__footer-bottom {
+      padding-top: 2rem;
+    }
+  }
+}

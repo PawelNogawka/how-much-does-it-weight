@@ -1,0 +1,29 @@
+$main: #1B8271;
+$main-dark:#0F5646;
+$dark-main: #C76D66;
+$secondary:#FF7468;
+$secondary-dark:#BB5240;
+$dark-text: #121E31;
+$light-text: #717579;
+$gray: #eee;
+$gray2:#F6FBFA;
+$stroke-color:#D7D7D7;
+$error: #eb5757;
+$error-backround: rgba(235, 87, 87, .1);
+$success: #28a745;
+
+// shadows
+
+$box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);;
+
+// gradients
+$backdrop-gradient: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.5) 0%,
+  rgba(0, 0, 0, 0.2) 100%
+);
+
+// other
+
+$border-radius-big: 3rem;
+$border-radius: 1.4rem;

@@ -1,0 +1,122 @@
+@import "../../styles/variables";
+
+.footer {
+  margin-top: 3rem;
+  padding: 3.5rem 0;
+  background-color: $dark-text;
+  color: #fff;
+
+  a {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 0.87;
+  }
+
+  &__info {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+    opacity: 0.87;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 5rem;
+    justify-content: space-between;
+    padding-bottom: 1.8rem;
+  }
+
+  &__row {
+    flex: 1 1 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  ul {
+    transition: opacity 0.3s ease;
+    a {
+      padding: 0.4rem;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+  }
+
+  &__contact-value {
+    opacity: 0.87;
+    font-style: normal;
+  }
+
+  &__contact-tile {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $light-text;
+      width: 3.8rem;
+      height: 3.8rem;
+      border-radius: 0.2rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #2b3e80;
+        color: #fff;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    flex: 1 1 45rem;
+  }
+
+  &__bottom {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #3d3f4e;
+  }
+
+  &__bottom-text {
+    color: #fff;
+    opacity: 0.87;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 5.5rem 0 3rem 0;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+
+.top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid $gray;
+  width: 100%;
+  &__signup {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__signup-text {
+    display: none;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__contact-tile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &--email {
+      display: none;
+    }
+
+    svg {
+      color: $main;
+    }
+
+    a {
+      color: $dark-text;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .top-navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 570px) {
+  .top-navbar {
+    &__contact-tile {
+      &--email {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .top-navbar {
+    &__signup-text {
+      display: block;
+      color: $dark-text;
+      font-weight: 500;
+    }
+  }
+}

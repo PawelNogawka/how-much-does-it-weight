@@ -1,0 +1,8 @@
+.health {
+  &__list {
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+}

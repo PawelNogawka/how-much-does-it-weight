@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.feature {
+  flex: 1 1 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2.7rem;
+  align-items: flex-start;
+  border: 0.1rem solid $gray;
+  border-radius: $border-radius;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: $border-radius;
+    background-color: $gray2;
+    flex-shrink: 0;
+
+    svg {
+      color: $main;
+      font-size: 3rem;
+    }
+  }
+
+  &__right {
+    flex-shrink: 1;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark-text;
+    margin-bottom: 0.8rem;
+  }
+
+  &__desc {
+    color: $dark-text;
+  }
+}
+
+@media (min-width: 678px) {
+  .feature {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+
+.table {
+  display: flex;
+  flex-direction: column;
+  color: $dark-text;
+
+  &__row--header {
+    span {
+      font-weight: 500;
+    }
+  }
+  &__daily-recommended {
+    text-align: center !important;
+  }
+
+  span {
+    width: 7.6rem;
+    text-align: left;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__name {
+    width: 9rem;
+    text-align: left;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__info {
+    margin-top: 1.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: $dark-text;
+  }
+}
+
+@media (max-width: 564px) {
+  .table {
+    &__row{
+      padding:  0.3rem;
+    }
+    &__name {
+      font-size: 1.4rem;
+      width: 6rem;
+    }
+    span {
+      font-size: 1.2rem;
+      width: 5rem;
+      text-align: center;
+    }
+  }
+}

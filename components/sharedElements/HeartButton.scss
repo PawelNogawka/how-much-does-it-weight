@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.heart-button {
+  svg {
+    font-size: 2.6rem;
+    color: $light-text;
+  }
+
+  &--liked {
+    svg {
+      color: $main;
+    }
+  }
+}

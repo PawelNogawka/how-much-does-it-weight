@@ -1,0 +1,92 @@
+@import "../../styles/variables";
+
+.confirm-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  transform: translate(-50%, -50%);
+  padding: 3rem 2rem;
+  border-radius: $border-radius;
+  z-index: 200;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  animation: fade-in 300ms ease-out forwards;
+
+  &__close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+    svg {
+      color: $light-text;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      svg {
+        color: $dark-text;
+      }
+    }
+  }
+
+  h3 {
+    font-weight: 600;
+    color: $dark-text;
+    font-size: 2.4rem;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -3rem);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

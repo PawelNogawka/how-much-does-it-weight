@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    svg {
+      color: #fe8d4d;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__rate {
+    color: $dark-text;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}

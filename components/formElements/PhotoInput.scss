@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.photo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+
+  &__label {
+    color: $light-text;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  &__img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.9rem;
+    min-height: 25rem;
+    width: 100%;
+    background-color: #fbfbfb;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 0.2rem solid $gray;
+
+    &--white {
+      background-color: #fff;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      align-self: flex-start;
+      border-radius: 0.4rem;
+    }
+
+    span {
+      color: $light-text;
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+
+    svg {
+      font-size: 4rem;
+      color: $light-text;
+    }
+  }
+  &__remove-img {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    svg {
+      font-size: 3rem;
+      color: $error;
+    }
+  }
+}

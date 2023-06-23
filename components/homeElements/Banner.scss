@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  gap: 3rem;
+  padding-top: 4rem;
+  //background-color: red;
+
+  &__left {
+    flex: 1 1 40rem;
+  }
+
+  &__header-subtitle {
+    font-size: 1.8rem;
+    color: $main;
+    font-weight: 500;
+  }
+
+  &__header-heading {
+    color: $dark-text;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 3rem;
+
+    span {
+      font-weight: 800;
+      display: block;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__header-desc {
+    margin: 3rem 0;
+    color: $dark-text;
+  }
+
+  &__header-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+
+    button,
+    a {
+      flex: 1;
+      max-width: 20rem;
+    }
+  }
+
+  &__partners {
+    margin-top: 3.5rem;
+    width: 100%;
+    max-width: 40rem;
+    height: auto;
+  }
+
+  &__right {
+    display: none;
+  }
+}
+
+@media (min-width: 568px) {
+  .banner {
+    &__header-desc {
+      margin: 3rem 0 4rem 0;
+    }
+
+    &__header-heading {
+      font-size: 4.2rem;
+    }
+
+    &__header-btns {
+      gap: 2rem;
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    &__header-heading {
+      font-size: 4.7rem;
+    }
+
+    &__right {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1 1 40rem;
+    }
+    &__right-background {
+      width: 53rem;
+      height: auto;
+    }
+
+    &__right-hero {
+      position: absolute;
+      right: 10rem;
+      bottom: 0rem;
+      height: auto;
+    }
+  }
+}

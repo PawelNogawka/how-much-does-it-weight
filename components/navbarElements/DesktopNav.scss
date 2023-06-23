@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.desktop-nav {
+  display: none;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+
+    li {
+      &:last-of-type {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &__link {
+    padding: 0.5rem;
+    color: $light-text;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.2s ease;
+    font-size: 1.6rem;
+    font-family: inherit;
+    &:hover {
+      color: $dark-text;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .desktop-nav {
+    display: block;
+  }
+}

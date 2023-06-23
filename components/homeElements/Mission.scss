@@ -1,0 +1,108 @@
+@import "../../styles/variables";
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-items: flex-end;
+  gap: 3rem 5rem;
+
+  &__left {
+    position: relative;
+    flex: 1 1 40rem;
+  }
+
+  &__left-background {
+    width: 23rem;
+    height: auto;
+  }
+
+  &__left-hero {
+    position: absolute;
+    width: 20rem;
+    bottom: 0.6rem;
+    left: 2rem;
+    height: auto;
+  }
+
+  &__right {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__counter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2.7rem 2rem;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $stroke-color;
+  }
+
+  &__counter-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__counter-tile-name {
+    font-weight: 500;
+    color: $dark-text;
+  }
+
+  &__counter-tile-amount {
+    font-weight: 600;
+    color: $dark-text;
+    font-size: 4.3rem;
+  }
+
+  &__btns {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 3rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .mission {
+    &__counter {
+      padding-bottom: 4.5rem;
+    }
+    &__btns {
+      margin-top: 3.3rem;
+      flex-direction: row;
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .mission {
+    &__counter {
+      margin-top: -1.3rem;
+      flex-direction: row;
+    }
+
+    &__left-background {
+      width: 33rem;
+      height: auto;
+    }
+
+    &__left-hero {
+      width: 25rem;
+      left: 15rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .mission {
+    &__left-hero {
+      width: 35rem;
+    }
+  }
+}

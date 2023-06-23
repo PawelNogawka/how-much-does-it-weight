@@ -1,0 +1,134 @@
+@import "../../styles/variables";
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 5rem;
+  align-items: flex-end;
+
+  &__left {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17rem;
+  }
+
+  &__right {
+    position: relative;
+    flex: 1 1 40rem;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+
+  &__right-background {
+    width: 18rem;
+    height: auto;
+  }
+
+  &__right-hero {
+    position: absolute;
+    left: 5rem;
+    width: 25rem;
+    bottom: 0;
+    height: auto;
+  }
+
+  &__info {
+    margin-top: -0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__info-tile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0.5rem;
+    gap: 2rem 3rem;
+  }
+
+  &__info-tile-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: $gray2;
+
+    svg {
+      color: $main;
+    }
+  }
+  &__info-tile-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: $dark-text;
+  }
+
+  &__info-tile-desc {
+    color: $dark-text;
+  }
+}
+
+@media (min-width: 568px) {
+  .about {
+    &__info {
+      margin-top: -1.3rem;
+    }
+
+    &__left {
+      margin-bottom: 7rem;
+    }
+
+    &__right-background {
+      width: 30rem;
+      margin-left: 9rem;
+    }
+
+    &__info-tile {
+      flex-wrap: nowrap;
+      padding: 2rem;
+      &:first-of-type {
+        margin-bottom: 2rem;
+        box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05),
+          0px 10px 10px rgba(0, 0, 0, 0.04);
+        border-radius: $border-radius;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    &__right-hero {
+      position: absolute;
+      width: 23rem;
+      left: 10rem;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about {
+    &__left {
+      margin-bottom: 0;
+    }
+    &__right-hero {
+      width: 37rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    &__right-hero {
+      left: 22rem;
+      width: 45rem;
+    }
+  }
+}

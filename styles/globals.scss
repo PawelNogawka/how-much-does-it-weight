@@ -1,0 +1,104 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding: 20rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  border: 0;
+  background: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $dark-text;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+p {
+  line-height: 158%;
+}
+
+.main {
+  margin-top: 13rem;
+}
+
+.full-width {
+  width: 100%;
+}
+.section-padding {
+  padding: 3rem 0 3rem 0;
+}
+
+.pin-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: stretch;
+  align-items: stretch;
+
+}
+
+
+@media(max-width:500px){
+  .main{
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-top: 17rem;
+  }
+
+  .section-padding {
+    padding: 5.6rem 0;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+
+.comment {
+  display: flex;
+  gap: 2rem 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  &__left {
+    flex-shrink: 0;
+  }
+
+  &__right-top {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  &__date {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-size: 1.4rem;
+    color: $dark-text;
+    font-weight: 500;
+  }
+
+  &__comment {
+    color: $light-text;
+  }
+
+  &__name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $dark-text;
+    text-transform: capitalize;
+  }
+
+  &__btn {
+    font-weight: 600;
+    color: $main;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $main-dark;
+    }
+  }
+}

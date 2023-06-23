@@ -1,0 +1,88 @@
+@import "../../styles/variables";
+.mobile-nav {
+  padding: 0.8rem;
+  color: $dark-text;
+
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+  }
+
+  &__list {
+    position: absolute;
+    top: 16rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem;
+    min-width: 20rem;
+    max-height: 70vh;
+
+    background-color: #fff;
+    border-radius: $border-radius;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    a {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      text-transform: capitalize;
+      color: $light-text;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $dark-text;
+      }
+    }
+  }
+
+  &__auth-btns {
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  &__auth-login-btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $main;
+    text-transform: capitalize;
+  }
+
+  &__btns {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .mobile-nav {
+    &__auth-btns {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+    &__list {
+      display: none;
+    }
+  }
+}

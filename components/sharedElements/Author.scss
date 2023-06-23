@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  img {
+    border-radius: 50%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.6rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    color: $dark-text;
+    font-size: 1.5rem;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: $light-text;
+    font-size: 1.3rem;
+  }
+
+  &__link {
+    color: $main;
+    font-weight: 500;
+  }
+
+  &__articles-amount {
+    display: none;
+  }
+
+  &__line {
+    display: none;
+  }
+}
+
+@media (min-width: 370px) {
+  .author {
+    &__name {
+      font-size: 1.7rem;
+    }
+    &__bottom {
+      font-size: 1.5rem;
+    }
+    &__articles-amount {
+      display: block;
+    }
+    &__line {
+      display: block;
+    }
+  }
+}

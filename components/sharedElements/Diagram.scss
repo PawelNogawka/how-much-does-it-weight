@@ -1,0 +1,63 @@
+@import "../../styles/variables";
+
+.diagram {
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 4.4rem;
+  }
+
+  &__score {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    min-width: 4rem;
+    height: 2.5rem;
+    padding: 0.4rem;
+    background-color: $secondary;
+    border-radius: 0.8rem;
+    text-align: center;
+    span {
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    svg {
+      position: absolute;
+      bottom: -1.3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $secondary;
+      margin-top: 1.6rem;
+      flex-shrink: 0;
+    }
+  }
+
+  &__rails {
+    width: 100%;
+    height: 1rem;
+    border-radius: $border-radius;
+    background-color: $gray;
+  }
+
+  &__progress {
+    height: 100%;
+    background-color: $secondary;
+    border-radius: inherit;
+  }
+}
+
+.diagram__requirment {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
+  color: $dark-text;
+}

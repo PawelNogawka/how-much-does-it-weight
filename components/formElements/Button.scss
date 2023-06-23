@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  background-color: $main;
+  border-radius: 0.4rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  letter-spacing: 0.03rem;
+  transition: all 0.4s ease;
+  font-family: inherit;
+  font-weight: 600;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-main;
+  }
+
+  &--secondary {
+    color: #fff;
+    background-color: $secondary;
+  }
+
+  &--outline {
+    color: $secondary;
+    background-color: #fff;
+    border: 0.1rem solid $secondary;
+
+    &:hover {
+      background-color: #fff;
+      color: $secondary-dark;
+      border: 0.15rem solid $secondary-dark;
+    }
+  }
+
+  &--dark {
+    background-color: #fff;
+    color: $dark-text;
+    border: 0.15rem solid $dark-text;
+
+    svg {
+      font-size: 1.8rem;
+    }
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: $dark-text;
+
+    svg {
+      font-size: 1.9rem;
+    }
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  &--empty {
+    color: $main;
+    background-color: #fff;
+    padding: 0.8rem;
+
+    &:hover {
+      color: $dark-main;
+      background-color: #fff;
+    }
+  }
+
+  &--small {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem 1.6rem;
+  }
+
+  &--disabled {
+    background-color: $gray;
+    color: $dark-text;
+
+    &:hover {
+      background-color: $gray;
+      color: $dark-text;
+    }
+  }
+}

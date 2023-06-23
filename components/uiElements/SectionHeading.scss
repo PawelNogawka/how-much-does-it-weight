@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.section-heading {
+  width: 100%;
+  max-width: 65rem;
+  text-align: left;
+  margin-bottom: 4rem;
+
+  &--center {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+    font-size: 2.7rem;
+    color: $dark-text;
+    font-weight: 600;
+  }
+
+  &__desc {
+    color: $light-text;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $main;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    margin-bottom: 9rem;
+
+    &--center {
+      margin: auto;
+      margin-bottom: 9rem;
+    }
+    &__title {
+      font-size: 4rem;
+    }
+  }
+}

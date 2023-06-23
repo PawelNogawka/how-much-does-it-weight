@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+
+.why-we {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 5.5rem;
+    margin-bottom: 7rem;
+  }
+
+
+
+  &__box {
+    flex: 1 1 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.7rem;
+    align-items: flex-start;
+    border: 0.1rem solid $gray;
+    border-radius: $border-radius;
+  }
+
+  &__box-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: $border-radius;
+    background-color: $gray2;
+    flex-shrink: 0;
+
+    svg{
+           color:$main;
+           font-size: 3rem;
+    }
+  }
+
+  &__box-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark-text;
+    margin-bottom: 0.8rem;
+  }
+
+  &__box-desc {
+    color: $dark-text;
+  }
+}
+
+
+
+@media(min-width:440px){
+    .why-we{
+        &__box{
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+
+@media(min-width:768px){
+  .why-we{
+      &__container{
+        margin-bottom: 0;
+      }
+  }
+}

@@ -1,0 +1,14 @@
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  padding: 2rem 0;
+  background-color: #fff;
+  z-index: 10;
+  transition: box-shadow 0.2s ease;
+
+  &--shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+}
