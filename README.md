@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+live site : https://how-much-does-it-weight.vercel.app/
 
-First, run the development server:
+When creating this application, I was inspired by the website http://iletowazy.pl/. I used technologies such as JS, Next.js, React.js, SCSS, HTML, and MongoDB.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  User can check the nutritional values, vitamins, and minerals of individual food items. Recipes related to the viewed article are displayed. The user can rate and comment on each article. After logging in, the user can add articles to their favorites and also add their own articles. Additionally, information about the calorie content of products is calculated based on their caloric needs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ ![HowMuchItWeights](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/24cb70ca-9141-4da7-9988-37a940405ab0)
+![One whole apple (1)](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/ece69ecc-9701-4d01-80fa-45c9bd57f4c1)
+![Search results by all (1)](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/2598a0c3-01d2-4aae-b7fa-9278f362e60e)
+![Your profile page](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/8d52faa0-d7eb-4158-b891-ee8006916b4b)
+![Zrzut ekranu z 2023-06-23 o 12 42 58](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/33d453dd-4eab-41f5-a6cb-0874940fd32f)
+![Zrzut ekranu z 2023-06-23 o 12 43 15](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/f1c4d9fe-93ea-45b3-9c4e-2cff9dad733a)
+![Zrzut ekranu z 2023-06-23 o 12 42 30](https://github.com/PawelNogawka/how-much-does-it-weight/assets/108990517/bafd0469-ae4c-4f0f-a3dc-50d3d2b20d96)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
