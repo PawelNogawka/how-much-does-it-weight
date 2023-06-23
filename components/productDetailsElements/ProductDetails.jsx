@@ -69,8 +69,8 @@ const ProductDetails = ({
             <DonateWidget />
           </div>
         </div>
-        <Health healthFeatures={product.healthFeatures} />
-        {recipes.length > 0 && <Recipes recipes={recipes} user={user} />}
+        <Health healthFeatures={product.healthFeatures} productName={product.name} />
+        {recipes.length > 0 && <Recipes recipes={recipes} user={user} productName={product.name} />}
         <Comments comments={product.comments} productId={product._id} />
       </Wrapper>
     </main>

@@ -7,14 +7,14 @@ import FeatureBox from "../sharedElements/FeatureBox";
 
 import "./Health.scss";
 
-const Health = ({ healthFeatures }) => {
+const Health = ({ healthFeatures, productName }) => {
   return (
     <section id="health" className="health section-padding">
       <SectionHeading
         center
         subtitle="health"
-        title="What is a healthy pear for?"
-        desc="find out what will give you eating pears every day"
+        title={`What is a healthy ${productName} for?`}
+        desc={`find out what will give you eating ${productName} every day`}
       />
 
       <ul className="health__list">

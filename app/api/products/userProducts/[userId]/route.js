@@ -4,7 +4,7 @@ import Product from "@/models/product";
 
 export const GET = async (request, { params }) => {
   const { userId } = params;
-
+console.log('ok')
   try {
     await connectToDB();
 

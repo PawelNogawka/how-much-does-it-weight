@@ -7,7 +7,7 @@ export const connectToDB = async () => {
 
   if (isConnected) {
     console.log("Mongdb is already connected");
-    return true
+    return true;
   }
 
   try {
@@ -31,38 +31,33 @@ export const countWomanBMR = (age, height, weight, activity) => {
   return result;
 };
 
-
 export const countManBMR = (age, height, weight, activity) => {
-    const result =
-     655 + (9,6 * weight) + (1,8 * height) - (4, 7 * age) * activity;
-  
-    return result;
-  };
+  const result =
+    655 + (9, 6 * weight) + (1, 8 * height) - (4, 7 * age) * activity;
 
-
-  export const countEnergy = (protein, fat, carbs) => {
-    const energy = carbs * 4 + fat * 9 + protein * 4;
-    return energy;
-  };
-
-
-  
-const BASE_URL = 'https://edamam-recipe-search.p.rapidapi.com/search?q'
-
-
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': process.env.NEXT_EDEMAN_API_KEY,
-		'X-RapidAPI-Host': 'edamam-recipe-search.p.rapidapi.com'
-	}
+  return result;
 };
 
+export const countEnergy = (protein, fat, carbs) => {
+  const energy = carbs * 4 + fat * 9 + protein * 4;
+  return energy;
+};
+
+const BASE_URL = "https://edamam-recipe-search.p.rapidapi.com/search?q";
+
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": process.env.NEXT_EDEMAN_API_KEY,
+    "X-RapidAPI-Host": "edamam-recipe-search.p.rapidapi.com",
+  },
+};
 
 export const fetchApi = async (url, limit = 3) => {
-  const modifiedUrl = `${url}&to=${limit}`; 
+  const modifiedUrl = `${url}&to=${limit}`;
   const data = await fetch(`${BASE_URL}=${modifiedUrl}`, options);
   const result = await data.json();
 
   return result;
 };
+
