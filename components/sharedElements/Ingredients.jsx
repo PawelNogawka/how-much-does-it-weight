@@ -11,16 +11,22 @@ import "./Ingredients.scss";
 const Ingredients = ({ title, nutrition, small }) => {
   const renderIngredientTile = (name, amount, unit, Icon) => {
     if (small && (name === "salt" || name === "fiber")) {
-      return null; 
+      return null;
     }
+
+    const formattedAmount = Number.isInteger(amount)
+      ? amount.toFixed(0)
+      : amount.toFixed(2);
 
     return (
       <div key={name} className="ingredients__tile">
         <Icon />
         <span className="ingredients__amount">
-          {amount.toFixed(2)} {unit}
+          {formattedAmount} {unit}
         </span>
-        {name !== "energy" && <span className="ingredients__name">{name}</span>}
+        {name !== "energy" && (
+          <span className="ingredients__name">{name}</span>
+        )}
       </div>
     );
   };
@@ -38,12 +44,7 @@ const Ingredients = ({ title, nutrition, small }) => {
             case "carbs":
               return renderIngredientTile(name, amount, unit, GiWrappedSweet);
             case "energy":
-              return renderIngredientTile(
-                name,
-                amount,
-                unit,
-                AiFillThunderbolt
-              );
+              return renderIngredientTile(name, amount, unit, AiFillThunderbolt);
             case "salt":
               return renderIngredientTile(name, amount, unit, GiSaltShaker);
             case "fiber":
