@@ -40,7 +40,6 @@ const ProductHeader = ({ product, user }) => {
     e.preventDefault();
     if (user?._id !== creator._id) return;
 
-
     await deleteItem(`/api/products/${_id}/delete/${user._id}`);
 
     setShowConfirmModal(false);
@@ -103,7 +102,7 @@ const ProductHeader = ({ product, user }) => {
         <Rating comments={comments} showAmount />
 
         <Ingredients
-          title={`${image.amount} g of products contains`}
+          title={`${image.amount} g of product contains`}
           nutrition={nutrition.photoWeight}
         />
         <Diagram

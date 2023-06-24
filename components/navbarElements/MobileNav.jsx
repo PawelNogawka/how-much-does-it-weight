@@ -78,24 +78,25 @@ const MobileNav = ({
   return (
     <nav className="mobile-nav">
       <div className="mobile-nav__row">
-        <div className="mobile-nav__auth-btns">
-          <Button
-            onClick={() => hanldeAuthBtnClick("register")}
-            ariaLabel="Sign up"
-            small
-            secondary
-          >
-            Signup
-          </Button>
-          <button
-            onClick={() => hanldeAuthBtnClick("login")}
-            className="mobile-nav__auth-login-btn"
-            aria-label="login"
-          >
-            login
-          </button>
-        </div>
-
+        {!user && (
+          <div className="mobile-nav__auth-btns">
+            <Button
+              onClick={() => hanldeAuthBtnClick("register")}
+              ariaLabel="Sign up"
+              small
+              secondary
+            >
+              Signup
+            </Button>
+            <button
+              onClick={() => hanldeAuthBtnClick("login")}
+              className="mobile-nav__auth-login-btn"
+              aria-label="login"
+            >
+              login
+            </button>
+          </div>
+        )}
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="/"

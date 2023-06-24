@@ -21,7 +21,7 @@ const Banner = ({ setIsCreateOpen, setIsAuthOpen, user }) => {
     <section className="banner">
       <div className="banner__left">
         <div className="banner__header">
-          <span className="banner__header-subtitle">- howmuchitweights</span>
+          <span className="banner__header-subtitle">- howmuchdoesitweight</span>
           <h1 className="banner__header-heading">
             <span className="banner__header-heading-bold">
               discower the weight

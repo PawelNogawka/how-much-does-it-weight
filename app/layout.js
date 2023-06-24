@@ -13,7 +13,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "HowMuchItWeights",
+  title: "HowMuchDoesItWeight",
   description: "Browse and Explore a Variety of products",
 };
 

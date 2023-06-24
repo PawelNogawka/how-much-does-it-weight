@@ -7,7 +7,6 @@
   display: flex;
   gap: 3rem;
   padding-top: 4rem;
-  //background-color: red;
 
   &__left {
     flex: 1 1 40rem;
@@ -47,6 +46,10 @@
       flex: 1;
       max-width: 20rem;
     }
+
+    svg {
+      display: none;
+    }
   }
 
   &__partners {
@@ -74,6 +77,10 @@
     &__header-btns {
       gap: 2rem;
       flex-direction: row;
+
+      svg {
+        display: block;
+      }
     }
   }
 }

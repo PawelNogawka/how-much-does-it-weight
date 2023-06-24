@@ -26,13 +26,13 @@ const Table = ({ data, photoWeight, user, mode }) => {
     let reference;
 
     switch (mode) {
-      case "nutrition":
+      case "Nutrition":
         reference = name === "energy" && user ? user.bmr : nutritionReq[name];
         break;
-      case "vitamins":
+      case "Vitamins":
         reference = vitaminsReq[name];
         break;
-      case "minerals":
+      case "Minerals":
         reference = mineralsReq[name];
         break;
       default:
